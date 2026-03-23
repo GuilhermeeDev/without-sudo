@@ -19,10 +19,7 @@ Por ser um projeto localizado em um repositório .git a unica dependência atual
 
 - **Instalação sem root** — tudo fica dentro de `~/.without-sudo` (ou pasta que você escolher)  
 - **Binários pré-compilados** — várias ferramentas comuns já vêm compiladas e prontas para uso (sem esperar horas de build)  
-- **Gerenciador de pacotes integrado** — inspirado em modelos como Nix/Guix, mas mais leve e focado em portabilidade  
-- **Isolamento opcional** — suporte a namespaces/proot para evitar conflitos com o sistema  
-- **Atualizações fáceis** — `wos update` (ou similar) baixa as versões mais recentes  
-- **Extensível** — fácil adicionar novos pacotes via receitas simples
+- **Gerenciador de pacotes incluso** — fornece script para instalação do homebrew.
 
 ## Instalação
 

@@ -27,9 +27,9 @@ Por ser um projeto localizado em um repositório .git a unica dependência atual
 ## Instalação
 
 ```bash
-git clone https://github.com/SEU_USUARIO/without-sudo.git ~/.without-sudo
+git clone https://github.com/GuilhermeeDev/without-sudo.git ~/.without-sudo
 cd ~/.without-sudo
 ```
 ```
-./install.sh
+./init.sh
 ```

@@ -4,12 +4,8 @@
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.mate.interface gtk-theme 'Adwaita-dark'
 
-# dotfiles de customização
+# dotfiles de customização (extra)
 git clone https://github.com/daniruiz/dotfiles.git 
-
-
-rm -rf ~/Downloads ~/Modelos ~/Imagens ~/Músicas ~/Vídeos ~/Público
-rm -rf 'Área de trabalho'
 
 cat > install-homebrew.sh << EOF
 #!/bin/bash

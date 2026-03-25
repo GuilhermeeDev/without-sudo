@@ -23,10 +23,13 @@ Por ser um projeto localizado em um repositório .git a unica dependência atual
 
 ## Instalação
 
+clone este repositório
 ```bash
 git clone https://github.com/GuilhermeeDev/without-sudo.git ~/.without-sudo
 cd ~/.without-sudo
 ```
+
+faca a instalação inicial
 ```
 ./init.sh
 ```

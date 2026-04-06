@@ -17,7 +17,7 @@ EOF
 
 cat > brew-utils-packages.sh << EOF
 #!/bin/bash
-brew install golang asdf fzf
+brew install golang asdf fzf podman
 
 # Adicionando PATH do asdf
 echo 'export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"' >> ~/.bashrc

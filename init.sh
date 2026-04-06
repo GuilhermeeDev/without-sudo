@@ -7,12 +7,6 @@ gsettings set org.mate.interface gtk-theme 'Adwaita-dark'
 # dotfiles de customização (extra)
 git clone https://github.com/daniruiz/dotfiles.git 
 
-<<<<<<< HEAD
-=======
-rm -rf ~/Downloads ~/Modelos ~/Imagens ~/Músicas ~/Vídeos ~/Público
-rm -rf 'Área de trabalho'
-
->>>>>>> 8167c6d ((fix) Corrigindo novas implementações do projeto)
 cat > install-homebrew.sh << EOF
 #!/bin/bash
 mkdir -p homebrew && curl -L https://github.com/Homebrew/brew/tarball/main | tar xz --strip-components 1 -C homebrew

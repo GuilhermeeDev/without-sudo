@@ -4,20 +4,19 @@
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.mate.interface gtk-theme 'Adwaita-dark'
 
-# dotfiles de customização (extra)
+# Dotfiles de customização (extra)
 git clone https://github.com/daniruiz/dotfiles.git 
 
-cat > install-homebrew.sh << EOF
-#!/bin/bash
+# Instalando Homebrew
 mkdir -p homebrew && curl -L https://github.com/Homebrew/brew/tarball/main | tar xz --strip-components 1 -C homebrew
 mkdir -p ~/linuxbrew ~/linuxbrew/.linuxbrew ~/linuxbrew/.linuxbrew/Cellar
 eval "$(homebrew/bin/brew shellenv)" && brew update --force --quiet && chmod -R go-w "$(brew --prefix)/share/zsh"
 echo 'eval "$(homebrew/bin/brew shellenv)"' >> ~/.bashrc
-EOF
 
+# Extra!
 cat > brew-utils-packages.sh << EOF
 #!/bin/bash
-brew install golang asdf fzf podman
+brew install golang asdf fzf
 
 # Adicionando PATH do asdf
 echo 'export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"' >> ~/.bashrc
